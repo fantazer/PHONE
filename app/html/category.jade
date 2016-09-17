@@ -1,0 +1,47 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include block_html/_element.jade
+	include ../module/**/*.jade
+	.service-page__wraper
+		+slide-menu()
+		.cabinet
+			.cabinet__menu
+				+cabinet-menu()
+			.cabinet__content
+				.category-page__title внутри категории
+				.category-page__subtitle оптимальные цены, оптимальное качество - ваши максимальные прибыли!
+				.row
+					.col.col--md-4.category__left-col
+						.type.type--md.type--mid.category__left-title примеры звонков
+						- for (var i = 0; i < 8; i++)
+							+call-sample()
+							
+					.col.col--md-8.category__right-col
+						.type.type--md.type--mid калькулятор  <span class="type--blue"> обслуживания онлайн чата </span>
+						.type.type--md.type--mid бюджет кампании
+						+range-set()
+						.divider
+						+conctraction()
+						.divider
+						.type.type--md.type--mid дополнительные опции
+						+adv-option('red')
+						.divider
+						
+						.take-service__row-btn
+							.btn.btn--md.btn--red-empty.btn--arrow
+								span СБРОСИТЬ ВЫБОР
+								i.icon.icon-close
+							.btn.btn--md.btn--green оформить заказ
+
+
+	+modal-order
+	+modal-callback
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

@@ -1,0 +1,104 @@
+//! block operator-content
+//.operator-page__wraper
+.operator-content
+	flex(between)
+.operator-lider
+	+below(1200px)
+		display none
+	min-width 400px
+	width 30%
+	flex(mid)
+	fw()
+	fl()
+	border-right 2px solid rgba(255, 255, 255, 0.33);
+.operator-lider__avatar
+	position relative
+	width 60%
+	> img
+		br(50%)
+	.but--play
+		bottom 0px
+		left 15%
+	.operator__star
+		bottom 0px
+		right 15%
+.but--play
+	width 70px
+	height 70px
+	br(50%)
+	background green
+	flex(mid)
+	position absolute
+	i
+		color white
+		font-size 36px 
+.operator__crown
+	position absolute
+	top -20%
+	left 25%
+	width 50%
+.operator__star
+	size 78px 76px
+	bgi("star.png")
+	background-size cover 
+	flex(mid)
+	position absolute
+	span 
+		color #262b43
+		font-size 25px
+		font-weight 700
+		line-height 31px
+		text-transform uppercase
+.operator-lider__info
+	color #ffe362
+	font-size 18px
+	font-weight 400
+	text-transform uppercase
+	margin-top 10px
+.operator-lider__title
+	color white
+	font-size 25px
+	font-weight 700
+	text-transform uppercase
+.operator-lider__text
+	color white
+	font-size 18px
+	font-weight 400
+	text-align center
+	width 90%
+	margin-top 20px
+.operator-wraper
+	+below(1200px)
+		width 100%
+		margin-top 40px
+	+below(768px)
+		.owl-nav
+			display none
+	width 68%
+.operator-people
+	flex(around)
+.operator-people__el
+	flex(mid)
+	fl()
+	fw()
+.operator-people__avatar
+	position relative
+	width 70%
+	.but--play
+		bottom 0px
+		left 2%
+	.operator__star
+		top 0px
+		right -4%
+		span
+			margin-top 10px
+.operator-people__title
+	margin-top 10px
+	color white
+	font-size 25px
+	font-weight 700
+	text-transform uppercase
+	span
+		display block
+		text-align center
+//!block operator-content end

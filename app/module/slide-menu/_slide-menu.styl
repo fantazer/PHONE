@@ -1,0 +1,91 @@
+//! block slide-menu
+.slide-menu
+	+below(768px)
+		width 100%
+		min-height 400px
+	position absolute
+	top 0
+	left 0
+	width 450px
+	height 100vh
+	background white
+	tr(all)
+	transform translateX(-100%)!important
+.slide-menu__wraper
+	+below(768px)
+		padding 30px
+	flex(between)
+	fl()
+	height 100%
+	position relative
+	.icon-close
+		cp()
+		position absolute
+		top 10px
+		left 10px
+		color red
+	padding  4vh 60px
+.slide-menu__block
+	+below(768px)
+		height 45%
+	width 100%
+.slide-menu--show
+	transform translateX(0)!important
+	z-index 2000
+.slide-menu__block-el
+	+below(768px)
+		text-align center
+		margin-bottom 10px
+	up()
+	text-align right
+	margin-bottom 4vh 
+	a
+		&:hover
+			border-bottom 2px solid #ffe362
+		+below(768px)
+			font-size 12px
+		font-size 2vh
+.slide-menu__footer
+	flex(mid)
+	fl()
+	margin-top 20px
+	width 100%
+	.btn
+		+below(768px)
+			font-size 10px
+			padding 20px 15px
+			font-size 14px
+			margin-right 0
+		width 100%
+		padding 3vh 15px
+		font-size 2vh 
+.slide-menu__footer-tel
+	+below(768px)
+		font-size 14px
+	font-size 25px
+	text-transform uppercase
+	color red
+	font-weight 600 
+.slide-menu__footer-email
+	+below(768px)
+		font-size 14px
+	text-align center
+	font-size 25px
+	margin-bottom 10px
+	
+.slide-menu-ctr
+	width 100%
+.slide-menu-ctr__el
+	flex(between)
+	margin-bottom 10px
+.slide-menu-ctr__text
+	color blue
+	font-size 16px
+	width 100px
+	up()
+.slide-menu-ctr__icon
+	margin-left  auto 
+	i
+		&:before
+			font-size 38px
+//!block slide-menu end

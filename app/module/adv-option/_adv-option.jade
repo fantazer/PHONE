@@ -1,0 +1,35 @@
+mixin adv-option(mark)
+	//block adv-option
+	.option
+		.row
+			.col.col--md-4.option__cal
+				.type.type-md Опции 1
+				- for (var j = 0; j < 4; j++)
+					label.style-label.style-label--checkbox
+						input(type="checkbox").sytle-input
+						.sytle-input-element
+						.sytle-input-text Наименование услуги #{j+1}
+			.col.col--md-4.option__cal
+				.type.type-md Опции 2
+				- for (var k = 0; k < 4; k++)
+					label.style-label.style-label--radio
+						input(type="radio").sytle-input
+						.sytle-input-element
+						.sytle-input-text Наименование услуги #{k+1}
+			.col.col--md-4.option__attantion
+				if mark==='red'
+					.adv-attantion.adv-attantion--red
+						.adv-attantion__title обратите внимание!
+						.adv-attantion__text У Вас есть возможность более точно настроить решение именно для своего бизнеса.
+						a(href="#").adv-attantion__link 
+							span выбрать решение
+							i.icon-arrow-right
+				else 
+					.adv-attantion
+						.adv-attantion__title обратите внимание!
+						.adv-attantion__text У Вас есть возможность более точно настроить решение именно для своего бизнеса.
+						a(href="#").adv-attantion__link 
+							span калькулятор решений
+							i.icon-arrow-right
+
+	//block adv-option end

@@ -1,0 +1,83 @@
+//! block main-page__footer
+.main-page__footer
+	+below(1024px)
+		fw()
+		padding 20px
+		height 100%
+		align-items inherit
+		box-shadow 0
+		background none 
+	flex(around)
+	width 100%
+	background-color rgba(255, 255, 255, 0.64)
+	box-shadow 0 0 5px rgba(0, 0, 0, 0.2)
+	position relative
+.main-page__footer-el 
+	+below(1200px)
+		font-size 13px
+	+below(1024px)
+		width 100%
+		font-size 16px
+		flex(mid)
+		flex-grow 1
+		color white
+	+below(480px)
+		font-size 14px	
+		font-weight 700 
+	up()
+	cp()
+	flex(mid)
+	width 12%
+	padding 0px 2.5%
+	font-size 18px
+	text-align center
+	background-size 100px 20px
+	flex-grow 1
+	height 80px
+	&:hover
+		color white
+		
+	&:nth-child(1)
+		&:hover
+			//background yellow url('../img/bg-bot-1.png') no-repeat 100% -50px
+			background yellow 
+	&:nth-child(2)
+		&:hover
+			background red
+			//background red url('../img/bg-bot-2.png') no-repeat 120% -30%
+	&:nth-child(3)
+		&:hover
+			background blue
+			//background blue url('../img/bg-bot-3.png') no-repeat 100% -50px
+	&:nth-child(4)
+		&:hover
+			background green
+			//background green url('../img/bg-bot-4.png') no-repeat 100% -50px
+	&:nth-child(5)
+		&:hover
+			background  darken(blue,20)
+			//background  darken(blue,20)  url('../img/bg-bot-5.png') no-repeat 100% -50px
+	&:nth-child(6)
+		&:hover
+			background red
+			//background red url('../img/bg-bot-6.png') no-repeat 100% -50px
+.main-page__footer-wrap
+	width 100%
+	+below(1024px)
+		display none
+		height 100%
+	.icon-close
+		+below(1024px)
+			display inline
+			position absolute
+			right 10px
+			top 10px
+			color white
+			padding 5px
+			round()
+			font-size 16px
+			cp()
+		display none
+
+
+//!block main-page__footer end

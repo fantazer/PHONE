@@ -1,0 +1,12 @@
+mixin review-sound()
+	//block review-sound
+	.review-sound__slider.owl-carousel.slider-control--mid
+		- for (var j = 0; j < 2; j++)
+			.review-sound__slider-el
+				.review-sound
+					- for (var i = 0; i < 9; i++)
+						.review-sound__el
+							.review-sound__logo
+								img(src="img/icon-company.png", alt="")
+							audio(src="sound.mp3" preload="auto")
+	//block review-sound end

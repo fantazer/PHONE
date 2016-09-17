@@ -1,0 +1,42 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include block_html/_element.jade
+	include ../module/**/*.jade
+	.service-page__wraper
+		+slide-menu()
+		.cabinet
+			.cabinet__menu
+				+cabinet-menu()
+			.cabinet__content
+				.service-page__title наименование услуги
+				.service-page__subtitle оптимальные цены, оптимальное качество - ваши максимальные прибыли!
+				.row
+					.col.col--md-4.service__left-col
+						.type.type-md.type--mid.service__left-title примеры звонков
+						- for (var i = 0; i < 8; i++)
+							+call-sample()
+							
+					.col.col--md-8.service__right-col
+						.type.type-md.type--mid параметры <span class="type--blue"> наименование услуги </span>
+						p  Равным образом рамки и место обучения кадров играет важную роль в формировании новых предлоРавным образом рамки и место обучения кадров играет важную роль в формировании новых предложений. Таким образом дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.
+						.divider
+						.type.type-md.type--mid дополнительные опции
+						+adv-option()
+						.divider
+						.type.type-md.type--mid оформить заказ услуги
+						+take-service()
+
+						
+
+
+	+modal-order
+	+modal-callback
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

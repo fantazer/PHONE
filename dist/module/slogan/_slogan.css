@@ -1,0 +1,12 @@
+.slogan {
+  width: 100%;
+}
+.slogan__wraper {
+  text-align: left;
+  margin-left: 10%;
+}
+.slogan-word {
+  font-size: 10vh;
+  font-family: fbold;
+  color: #00f;
+}

@@ -1,0 +1,21 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include block_html/_element.jade
+	include ../module/**/*.jade
+	.blur__wraper
+		.operator-page__wraper
+			+header()
+			.operator-page__content
+				+slogan-operator()
+				+operator-content()
+			+main-page__footer()
+			+slide-menu()
+		+el-toggle-bot-menu()
+	+modal-order
+	+modal-callback
+				
+	//Include scripts
+	include ./block_html/_script.jade

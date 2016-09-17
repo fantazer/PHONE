@@ -1,0 +1,28 @@
+mixin slide-menu()
+	//block slide-menu
+	.slide-menu
+		.slide-menu__wraper
+			i.icon-close
+			.slide-menu__block
+				- var arr =['наши клиенты','телефонные роботы','входящие звонки','исходящие звонки','обслуживание онлайн чата','Отраслевые решения','о нас','блог'];
+				- each val in arr
+					.slide-menu__block-el
+						a(href="#") #{val}
+			.slide-menu-ctr
+				a(href="#").slide-menu-ctr__el
+					.slide-menu-ctr__text База контактов
+					.slide-menu-ctr__icon
+						i.icon-i-list
+				a(href="#").slide-menu-ctr__el
+					.slide-menu-ctr__text  Конструктор скриптов
+					.slide-menu-ctr__icon
+						i.icon-i-tree
+			.slide-menu__footer
+				.slide-menu__footer-tel +7(123) 456-78-90
+				.slide-menu__footer-email info@ak24.ru
+				a(href="").btn.btn--md.btn--green заказать звонок
+				a(href="").btn.btn--md.btn--blue звонок с сайта
+
+
+
+	//block slide-menu end

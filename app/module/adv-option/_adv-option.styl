@@ -1,0 +1,53 @@
+//! block adv-option
+
+.adv-attantion
+	+below(768px)
+		padding 10px
+	padding 20px 30px
+	background blue
+	br(4px)
+	color white 
+.adv-attantion__title
+	+below(768px)
+		font-size 14px
+	color white
+	font-size 22px
+	font-weight 700
+	text-transform uppercase
+	text-align center
+	margin-bottom 15px
+.adv-attantion__text
+	+below(768px)
+		font-size 14px
+		margin-bottom 10px
+	text-align center
+	font-size 18px
+	margin-bottom 20px
+.adv-attantion__link
+	+below(768px)
+		font-size 12px
+	text-align center
+	display block
+	width 100%
+	font-size 18px
+	up()
+	color white
+	flex(mid)
+	i
+		color white
+		&:before
+			font-size 28px
+.option__cal
+	+below(1440px)
+		width 50%
+	+below(768px)
+		> .type-md
+			text-align center
+.option__attantion
+	+below(1440px)
+		width 100%
+.adv-attantion--red
+	background-color red
+	background-image url("../img/attantion-bg.png")
+	background-repeat no-repeat
+//!block adv-option end

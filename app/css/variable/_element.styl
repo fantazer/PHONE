@@ -1,0 +1,727 @@
+placeholer(#747474)
+.type--xs
+	+below(768px)
+		font-size 8px
+	font-size 10px
+	
+.type--sm
+	+below(768px)
+		font-size 10px
+	font-size 12px
+
+.type
+	+below(768px)
+		font-size 14px
+	font-size 16px
+	font-weight 700
+	text-transform uppercase
+	margin-bottom 25px
+	color black
+
+.type--md,.type-md
+	+below(768px)
+		font-size 18px
+		margin-bottom 25px
+	font-size 24px
+	margin-bottom 35px
+
+.type--lg
+	+below(768px)
+		font-size 20px
+	font-size 32px
+.type--mid
+	text-align center
+.type--blue
+	color blue
+	display inline-block
+	margin-top 10px
+.btn
+	up()
+	br(4px)
+	tr(all)
+	cp()
+	display inline-block
+	margin-bottom 20px
+	text-align center
+	color white
+	margin-right 20px
+	font-weight 700
+	white-space nowrap
+.btn--sm
+	font-size 25px
+	padding 15px
+	@extend .btn
+	font-weight 700 
+.btn--md
+	font-size 25px
+	padding 25px 20px
+	@extend .btn
+	max-height 78px
+.btn--lg
+	font-size 20px
+	padding 10px 30px
+	@extend .btn
+
+.btn--red
+	background red
+	color white
+	&:hover
+		background darken(red,10)
+
+.btn--green
+	background green
+	&:hover
+		background darken(green,20)
+.btn--blue
+	background blue 
+	
+.btn--blue-empty
+	background white
+	border 2px solid blue
+	color black
+	font-weight 400 
+	height calc(100% - 4px)
+.btn--red-empty
+	+below(1200px)
+		i
+			font-size 16px
+	background white
+	border 2px solid red
+	color red
+	font-weight 700
+	.icon-close
+		margin-left 10px
+	i
+		color red
+.btn--arrow
+	flex(mid)
+	.icon-arrow-left
+		margin-right 20px
+		
+	.icon-arrow-right
+		margin-left 20px
+		
+		
+
+
+.section
+	+below(768px)
+		padding 30px 0
+		.btn
+			width 100%
+			text-align center
+	padding 90px 0px
+
+@-webkit-keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.shrink
+	position fixed
+	top 0
+	left 0
+	background white
+	width 100%
+	margin 0
+	animation:  slideInDown  1s 1 ease-in-out
+
+input,textarea
+	border 0px
+	padding 20px 15px
+	border 1px solid grey
+	border-radius 4px
+	font-size 18px
+	
+button
+	up()
+	br(4px)
+	tr(all)
+	border 0px
+	display inline-block
+	margin-bottom 20px
+	font-size 20px
+	padding 10px 30px
+	background red
+	color white
+	&:hover
+		background darken(red,10)
+	form
+		display block
+
+table
+	table(true,true)
+.small-only
+	+below(768px)
+		display table
+	display none
+.large-only
+	+below(768px)
+		display none
+
+.icon
+	display inline-block
+	font  normal normal normal "main"
+	&:before
+		line-height 50%
+		f()
+i
+	display inline 
+	font-family main
+	color blue
+	font-size 24px
+.filter
+	width 100%
+	height 100vh
+	background rgba(15, 15, 15, 0.88)
+	position absolute
+	top 0px
+	left 0px
+.b-modal
+	background rgba(15, 15, 15, 0.88)!important
+	opacity 1!important
+.toggle-bot-menu
+	+below(1024px)
+		display block 
+	+below(768px)
+		padding 10px
+		right 20px
+		bottom 20px
+		flex(mid)
+		i
+			font-size 14px
+	display none
+	position fixed
+	right 40px
+	bottom 40px
+	padding 20px
+	background white
+	z-index 10
+	box-shadow 0px 1px 3px #d9d6d6
+	cp()
+	border-radius 50%
+	z-index 100
+.blur-filter
+	-webkit-filter: blur(20px);
+.modal
+	display none
+	position relative
+	.icon-close
+		position absolute
+		color white
+		top 0
+		right 0
+		cp()
+		
+//audio
+.audiojs
+	background transparent
+	box-shadow none
+	height auto
+	width 100%
+	margin-bottom 0px
+	flex(mid)
+	.soundline
+		width 100%
+		margin-top 10px
+	.play-pause
+		+below(1378px)
+			min-width 50px
+			height 50px
+		border 0px
+		float none
+		min-width 75px
+		height 75px
+		margin-right 20px
+		padding 0
+	.time
+		border 0px
+		text-shadow none
+		color white
+		flex(between)
+		width 100%
+		float none
+		height auto
+		line-height 14px 
+		padding 0
+		margin 0
+		margin-top 5px
+		font-family  GothamPro
+	.scrubber
+		width 100%
+		background #e0e0e0
+		border 0px
+		border-radius 8px
+		float none
+		margin 0
+		height 22px
+		opacity .7
+	.loaded
+		background yellow
+		height 100%
+		border-radius 0 10px 10px 0px
+	.progress
+		background green
+		height 22px
+		border-radius 0 10px 10px 0px
+	.play
+	, .pause
+		background green
+		width 100%
+		height 100%
+		border-radius 50%
+		flex(mid)
+		i
+			+below(1378px)
+				font-size 30px
+			color white
+			font-size 42px
+	.playing
+		.play
+			display none!important
+	.pause
+		background red
+	.loading
+		display none
+	.error
+		display none
+.cloud-message
+	+below(768px)
+		margin-left 5px
+	display inline-block
+	font-size 12px
+	padding 5px 6px
+	background blue
+	color white
+	br(3px) 
+	font-weight 600
+	position relative
+	line-height 14px
+	&:before
+		content ''
+		triangle:left 5px blue
+		position absolute
+		left -5px
+		margin-top 2.5px	
+.cloud-message--light
+	background white
+	color blue!important
+	&:before
+		content ''
+		triangle:left 5px white
+		position absolute
+		left -5px
+		margin-top 2.5px	
+
+//carousel
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -30px
+	color white
+	font-size 40px
+.owl-carousel
+	position relative
+	.icon
+		font-size 64px
+.owl-prev
+	+below(768px)
+		left 2%
+	left 1%
+.owl-next
+	+below(768px)
+		right 2%
+	right 1%
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top -40px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+.owl-dot.active
+	background #322f40
+
+.slider-control--mid
+	margin-bottom 40px
+	.owl-next,.owl-prev
+		position absolute
+		top inherit
+		bottom -20px
+		margin-top 0px
+		color white
+		font-size 40px
+		z-index 9999
+	.owl-carousel
+		position relative
+		.icon
+			font-size 64px
+	.owl-prev
+		+below(1200px)
+			left 40%
+		left 44%
+	.owl-next
+		+below(1200px)
+			right 40%
+		right 44%
+	.owl-dots
+		width 100%
+		flex(mid)
+		margin-top 20px
+		position relative
+		z-index 2000
+	.owl-dot
+		round()
+		margin 5px
+		width 10px
+		height 10px
+		background-color rgba(255, 255, 255, 0.25)
+	.owl-dot.active
+		background yellow
+
+.cabinet
+	+below(768px)
+		fl()
+	display flex
+	height 100%
+	min-height 100vh
+.cabinet__content
+	+below(768px)
+		padding 20px
+	padding 50px
+	width 100%
+.service-page__title
+	+below(1200px)
+		font-size 48px
+	+below(768px)
+		font-size 24px
+	color #6f83d8
+	font-size 90px
+	font-weight 900
+	text-transform uppercase
+	text-align center
+	margin-bottom 20px
+.service-page__subtitle
+	+below(1200px)
+		font-size 16px
+		margin-bottom 40px
+	+below(768px)
+		font-size 12px
+	color #262b43
+	font-size 25px
+	font-weight 400
+	text-transform uppercase
+	text-align center
+	margin-bottom 100px
+.service__left-col
+	+below(1200px)
+		order 2
+		width 100%
+		padding-left 0
+		padding-right 0
+		border-right 0
+	padding-right 50px
+	border-right 2px solid #E9E9E9
+	order 1
+.service__left-title
+	margin-bottom 40px
+.service__right-col
+	+below(1200px)
+		order 1
+		width 100%
+		padding-left 0
+	padding-left 50px
+	order 2
+
+.service-page__title
+	+below(1200px)
+		font-size 48px
+	+below(768px)
+		font-size 24px
+	color #6f83d8
+	font-size 90px
+	font-weight 900
+	text-transform uppercase
+	text-align center
+	margin-bottom 20px
+.service-page__subtitle
+	+below(1200px)
+		font-size 16px
+		margin-bottom 40px
+	+below(768px)
+		font-size 12px
+	color #262b43
+	font-size 25px
+	font-weight 400
+	text-transform uppercase
+	text-align center
+	margin-bottom 100px
+.service__left-col
+	+below(1200px)
+		order 2
+		width 100%
+		padding-left 0
+		padding-right 0
+		border-right 0
+	padding-right 50px
+	border-right 2px solid #E9E9E9
+	order 1
+.service__left-title
+	margin-bottom 40px
+.service__right-col
+	+below(1200px)
+		order 1
+		width 100%
+		padding-left 0
+	padding-left 50px
+	order 2
+//category page
+.category-page__title
+	+below(1200px)
+		font-size 48px
+	+below(768px)
+		font-size 24px
+	color #6f83d8
+	font-size 90px
+	font-weight 900
+	text-transform uppercase
+	text-align center
+	margin-bottom 20px
+.category-page__subtitle
+	+below(1200px)
+		font-size 16px
+		margin-bottom 40px
+	+below(768px)
+		font-size 12px
+	color #262b43
+	font-size 25px
+	font-weight 400
+	text-transform uppercase
+	text-align center
+	margin-bottom 100px
+.category__left-col
+	+below(1200px)
+		order 2
+		width 100%
+		padding-left 0
+		padding-right 0
+		border-right 0
+	padding-right 50px
+	border-right 2px solid #E9E9E9
+	order 1
+.category__left-title
+	margin-bottom 40px
+.category__right-col
+	+below(1200px)
+		order 1
+		width 100%
+		padding-left 0
+	+below(768px)
+		padding 0
+	padding-left 50px
+	order 2
+
+.category-enter__right-col
+	+below(1200px)
+		order 2
+		width 100%
+		padding-left 0
+		padding-right 0
+		border 0 px
+	padding-left 50px
+	border-left 2px solid #E9E9E9
+	order 2
+.category-enter__right-title
+	margin-bottom 40px
+.category-enter__left-col
+	+below(1200px)
+		order 1
+		width 100%
+		padding-right 0
+	+below(768px)
+		padding 0
+	padding-right 50px
+	order 1
+.divider
+	height 2px
+	background grey--light
+	margin 20px 0 
+	
+//checkbox
+.style-label
+	+below(768px)
+		flex(mid)
+	+below(480px)
+		justify-content flex-start
+	display flex
+	position relative
+	align-items center
+	margin-bottom 20px
+.style-label--checkbox
+	input
+		position absolute
+		top 0
+		left -9999px
+	.sytle-input-element
+		width 20px
+		height 20px
+		position relative
+		display inline-block
+		background-size cover
+		margin-right 10px
+		background grey--light
+		br(3px) 
+		cp()
+	.sytle-input
+		&:checked + .sytle-input-element
+			//background-image url('')
+			flex(mid)
+			background blue
+			color white
+			&:before
+				content '\6e'
+				font-family "main" !important
+.style-label--radio
+	input
+		position absolute
+		top 0
+		left -9999px
+	.sytle-input-element
+		round()
+		cp()
+		width 20px
+		height 20px
+		position relative
+		display inline-block
+		margin-right 10px
+		background grey--light
+	.sytle-input
+		&:checked + .sytle-input-element
+			flex(mid)
+			background grey--light
+			color white
+			&:before
+				content ''
+				width 12px
+				height 12px
+				background red
+				round() 
+.sytle-input-text 
+	font-size 18px
+
+.form--takeservice
+	input
+		width 100%
+		margin-bottom 10px
+		border 1px solid grey--light
+		text-align center
+
+//range
+.range__wrap
+	margin-bottom 50px
+	margin-top -20px
+	.irs-bar-edge
+		background blue
+		height 15px
+		border-radius 10px 0px 0px 10px
+		width 25px
+	.irs-bar
+		height 15px
+		background blue
+	.irs-line-left
+		height 15px
+		border-radius 10px 0px 0px 10px
+		background #e6ecf6 
+	.irs-line-right
+		height 15px
+		background #e6ecf6 
+		border-radius 0px 10px 10px 0px
+	.irs-line-mid
+		background #e6ecf6 
+		height 15px
+	.irs-line
+		height 15px
+	.single
+		background url('../img/range-btn.png')
+	.irs-slider
+		width 45px
+		height 30px
+	.irs-min, .irs-max,.irs-single
+		top 45px
+		background transparent
+		color black
+.range__wrap--green
+	.irs-bar-edge
+		background green
+	.irs-bar
+		background green
+.range-set
+	flex(between)
+	input
+		+below(768px)
+			width 80px
+		padding 0
+		margin-bottom 10px
+		border 1px solid grey--light
+		padding 3px
+		font-size 16px
+		width 110px
+.range-set__el--mobile
+	+below(768px)
+		//display none!important
+//select
+.nice-select
+	background blue
+	color white
+	border 0px
+	position relative
+	&:after
+		content ''
+		border 0px
+	.list
+		color white
+		background blue
+		margin 0
+		border-radius 0px 0px 5px 5px
+		width 100%
+		li
+			&:hover
+				background darken(blue,30)!important 
+	.selected,.focus
+		background-color blue!important
+		font-weight 400!important 
+		color white
+	.select--arrow
+		position absolute
+		top 50%
+		margin-top -20px 
+		right 3px
+		tr(all)
+	i
+		color white
+.nice-select.open
+	border-radius 5px 5px 0px 0px
+	.select--arrow
+		transform rotate(180deg)	
+

@@ -1,0 +1,51 @@
+//! block conctraction
+.construction
+	+below(1600px)
+		fw()
+	flex(between)
+	align-items flex-start
+	padding 30px 0
+.construction__number	
+	+below(1600px)
+		width 100%
+.construction__call	
+	+below(768px)
+		width 100%!important
+	+below(1600px)
+		width 50%
+		margin-bottom 30px
+.construction__type	
+	+below(768px)
+		width 100%!important
+	+below(1600px)
+		width 50%
+		margin-bottom 30px
+.swicher__btn
+	background yellow
+	br(20px)
+	width 100px
+	position relative
+	height 38px
+	cp()
+	img
+		tr(all)
+		position absolute
+		left 0
+.swicher__btn--turn
+	background blue 
+	img
+		left inherit
+		right 0px
+.construction__call-wrap
+	flex(mid)
+.construction__call-text
+	flex(mid)
+	img
+		margin 0 5px
+	span
+		margin 0 5px
+		font-size 18px
+.construction__type
+	.nice-select
+		width 100%
+//!block conctraction end

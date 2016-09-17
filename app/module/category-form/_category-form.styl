@@ -1,0 +1,31 @@
+//! block category-form
+.category-form
+	flex(mid)
+.category-form__wrap
+	+below(768px)
+		width 100%
+	margin-top 30px
+	width 80%
+	form
+		input
+			+below(768px)
+				margin-bottom 10px
+			width 100%
+			text-align center
+			margin-bottom 30px
+			border 1px solid grey--light
+.category-form_row-btn
+	flex(between)
+	.btn
+		+below(1600px)
+			font-size 16px
+		+below(768px)
+			width 100%
+			font-size 12px
+		margin 0
+		&:nth-child(1)
+			width 30%
+		&:nth-child(2)
+			width 67%
+			
+//!block category-form end

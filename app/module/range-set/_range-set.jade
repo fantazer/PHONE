@@ -1,0 +1,18 @@
+mixin range-set()
+	//block range-set
+	.range-set
+		.range-set__el
+			input(type="text" class="range-start range-control")
+			select.select--style
+				option руб
+				option дол
+				option евр
+		.range-set__el
+			select.select--style.range-set__el--mobile
+				option руб
+				option дол
+				option евр
+			input(type="text" class="range-end range-control")
+	.range__wrap
+		input(type="text" class="range " name="example_name" value="" )
+	//block range-set end

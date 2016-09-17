@@ -1,0 +1,81 @@
+@import 'rupture'
+@import 'jeet'
+@import "variable/_constant.styl"
+@import "variable/_function.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "icon/style.css"
+@import "variable/_default.styl"
+@import "variable/_element.styl"
+@import "variable/_fonts.styl"
+
+rupture.scale = 0 480px 768px 992px 1200px
+rupture.scale-names = 'xs' 'sm' 'md' 'lg'
+jeet.gutter = 1
+
+body
+	font-size 12px
+	font-family  GothamPro
+	color #5b5b5b
+.main-cont
+	center(1200px)
+	position relative
+	width 100%
+	padding  0 10px
+	+above(1200px)
+		width 1200px
+
+//main-page
+.main-page__wraper
+	+below(768px)
+		background-position -400px  -200px
+	bgi("main-pg-bg.jpg")
+	background-position 0px  -200px
+	width 100%
+	height 100vh
+	position relative
+	flex(between)
+	fw()
+	fl()
+	min-height 400px
+.review-page__wraper
+	+below(1200px)
+		min-height 100vh
+		height 100%
+	bgi("review-bg.jpg")
+	width 100%
+	height 100vh
+	-webkit-background-size cover 
+	-o-background-size cover 
+	background-size cover 
+	flex(between)
+	fw()
+	fl()
+.operator-page__wraper
+	+below(1024px)
+		min-height 100vh
+		height 100%
+	bgi("operator-bg.jpg")
+	width 100%
+	height 100vh
+	background-size cover 
+	flex(between)
+	fw()
+	fl()
+.solution-page__wraper
+	+below(1024px)
+		min-height 100vh
+		height 100%
+	bgi("solution-bg.jpg")
+	width 100%
+	height 100vh
+	background-size cover 
+	flex(between)
+	fw()
+	fl()
+.service-page__wraper
+	min-height 100vh
+	
+@import "../module/**/*"
+
+

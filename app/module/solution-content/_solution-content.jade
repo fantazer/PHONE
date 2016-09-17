@@ -1,0 +1,31 @@
+mixin solution-content()
+	//block solution-content
+	.solution-content
+		.solution-control
+			.solution-control__title 
+				span для правильного подбора решения, 
+				span выберите вашу категорию отрасли:
+				.solution-toggle выберите  категорию отрасли
+			.solution-control__select
+				li.solution-control__el.solution-control__el--active(data-solutioncont="1") название категории
+				- for (var i = 0; i < 5; i++)
+					li.solution-control__el() название категории
+			select.select--style.solution-control__drop
+				- for (var i = 0; i < 5; i++)
+					option(value="" data-solutioncont='#{i+2}') название категории
+		.solution-item
+			.solution-item__wraper(data-solutionwrap="1")
+				- for (var j = 0; j < 8; j++)
+					a(href="#").solution-item__el
+						.solution-item__el-wraper
+							.solution-item__img
+								i(class="icon-icon-solution-#{j+1}") 
+							.solution-item__title название отрасли
+			.solution-item__wraper.hidden(data-solutionwrap="2")
+				- for (var j = 0; j < 6; j++)
+					a(href="#").solution-item__el
+						.solution-item__el-wraper
+							.solution-item__img
+								i(class="icon-icon-solution-#{j+1}") 
+							.solution-item__title название отрасли
+	//block solution-content end

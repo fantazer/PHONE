@@ -1,0 +1,134 @@
+//! block solution-content
+.solution-content
+	flex(between)
+	fw()
+	//align-items flex-start
+	width 90%
+	margin 0 auto
+	height 100%
+.solution-control
+	+below(1024px)
+		width 100%
+		border-right 0px
+	width 25%
+	border-right 1px solid white
+	padding-right 2%
+.solution-control__title
+	+below(1200px)
+		font-size 10px
+		font-weight 400 
+	+below(1024px)
+		text-align center
+		margin-bottom 0
+		display none 
+		span
+			display none
+		
+	color white
+	font-size 16px
+	font-weight 600
+	text-transform uppercase
+	margin-bottom 20px
+.solution-toggle
+	+below(1024px)
+		display block
+	display none
+	padding 10px
+	color black 
+	font-size 10px
+	font-weight 700
+	color white
+	border 1px solid white
+	br(4px) 
+	cp()
+.solution-control__select
+	+below(1024px)
+		background white
+		display none
+.solution-control__el
+	+below(1024px)
+		&:nth-child(1)
+			border-top 1px solid #eeeeee
+		font-size 14px
+		margin-bottom 20px
+		text-align center
+		color black
+		padding 10px
+		list-style none
+		border-bottom 1px solid #eeeeee
+		margin-bottom 0
+	color white
+	font-size 1vw
+	font-weight 400
+	text-transform uppercase
+	margin-bottom 9%
+	list-style cyrcle
+	cp()
+.solution-control__el--active
+	+below(1024px)
+		&:after
+			content ""
+			display none
+	color black
+	background white
+	padding 10px
+	br(4px)
+	position relative
+	list-style none
+	padding-left 20px
+	&:after
+		content " > "
+		position absolute
+		right 10px
+.solution-item
+	+below(1024px)
+		width 100%
+	width 75%
+	flex(mid)
+	fw()
+.solution-item__wraper
+	flex(mid)
+	fw()
+	width 80%
+.solution-item__el
+	+below(1024px)
+		width 50%
+	width 25%
+	padding  3% 5%
+	flex(mid)
+	i
+		+below(1024px)
+			font-size 50px
+		font-size 4vw
+		color white
+.solution-item__el-wraper
+	padding 10px
+	border-radius 3px
+	flex(mid)
+	fl()
+	fw()
+	&:hover
+		border 2px solid yellow
+		padding 6px 10px
+.solution-item__img
+	text-align center
+	margin-bottom 10px
+.solution-item__title
+	+below(1024px)
+		font-size 12px
+	text-align center
+	color white
+	font-size 1vw
+	font-weight 700
+	text-transform uppercase
+.solution-control__drop
+	+above(1024px)
+		display none
+	width 100%
+	.current
+		text-align center
+		display inline-block
+		width 100%
+	.option
+		text-align center
+//!block solution-content end

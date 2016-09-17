@@ -1,0 +1,33 @@
+mixin operator-content()
+	//block operator-content
+	.operator-content
+		.operator-lider
+			.operator-lider__avatar
+				img(src="img/operator-lider.png", alt="")
+				a(href="#").but--play
+					i.icon-play
+				.operator__crown
+					img(src="img/crown.png", alt="")
+				.operator__star 
+					span 7
+			.operator-lider__info лучший оператор недели
+			.operator-lider__title анна аннушкина
+			.operator-lider__text Высококлассный специалист,с опытом диктора радио «Радио1»,а также виджеем на канале «Канал!».
+
+		.operator-wraper
+			.operator-slider.slider-control--mid
+					.operator-people.operator-slider__el.owl-carousel
+						- for (var i = 0; i < 8; i++)
+							.operator-people__el
+								.operator-people__avatar
+									img(src="img/operator.png", alt="")
+									a(href="#").but--play
+										i.icon-play
+									.operator__star 
+										span 7
+								.operator-people__title 
+									span анна
+									span аннушкина
+
+
+	//block operator-content end

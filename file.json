@@ -1,0 +1,36 @@
+{
+	"block":{
+		"header":"header",
+		"header-panel":"header-panel",
+		"slogan":"slogan",
+		"slogan-review":"slogan-review",
+		"slogan-operator":"slogan-operator",
+		"review-sound":"review-sound",
+		"operator-content":"operator-content",
+		"main-page__footer":"main-page__footer",
+		"slide-menu":"slide-menu",
+		"modal-order":"modal-order",
+		"modal-callback":"modal-callback",
+		"slogan-solution":"slogan-solution",
+		"solution-content":"solution-content",
+		"cabinet-menu":"cabinet-menu",
+		"call-sample":"call-sample",
+		"service-content":"service-content",
+		"adv-option":"adv-option",
+		"take-service":"take-service",
+		"range-set":"range-set",
+		"conctraction":"conctraction",
+		"category-list":"category-list",
+		"category-form":"category-form"
+		
+	},
+	"page":{
+		"index":"index",
+		"operator":"operator",
+		"review":"review",
+		"solution":"solution",
+		"service":"service",
+		"category":"category",
+		"category-enter":"category-enter"
+	}
+}
