@@ -193,6 +193,7 @@ i
 	position absolute
 	top 0px
 	left 0px
+	z-index 100
 .b-modal
 	background rgba(15, 15, 15, 0.88)!important
 	opacity 1!important
@@ -317,7 +318,7 @@ i
 		content ''
 		triangle:left 5px blue
 		position absolute
-		left -5px
+		left -4px
 		margin-top 2.5px	
 .cloud-message--light
 	background white
@@ -380,15 +381,15 @@ i
 	.owl-prev
 		+below(1200px)
 			left 40%
-		left 44%
+		left 35%
 	.owl-next
 		+below(1200px)
 			right 40%
-		right 44%
+		right 35%
 	.owl-dots
 		width 100%
 		flex(mid)
-		margin-top 20px
+		margin-top 35px
 		position relative
 		z-index 2000
 	.owl-dot
@@ -725,3 +726,6 @@ i
 	.select--arrow
 		transform rotate(180deg)	
 
+.filter-body
+	+below(768px)
+		height 400px

@@ -1,4 +1,9 @@
 //! block header
+.main-page-header__message-wrap
+	position relative
+.main-page-wraper
+	width 100%
+	position relative
 .main-page-header
 	+below(768px)
 		padding 5px 10px
@@ -7,7 +12,8 @@
 	position relative
 	padding 10px 15px
 	width 100%
-	background #AFBAF0 
+	//background #AFBAF0
+	background white 
 	height 50px
 	.icon-menu-toggle
 		cp()
@@ -20,12 +26,15 @@
 	i 
 		font-size 36px
 .main-page-header__message-val
+	+below(768px)
+		line-height 30px
 	position absolute
-	lef 0px
+	line-height 36px
+	top 0
+	left 0px
 	color white
-	margin-top -2px
-	margin-left 2px
 	text-align center
+	width 100%
 .main-page-header__toggle
 	+below(768px)
 		i

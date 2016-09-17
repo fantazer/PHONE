@@ -68,6 +68,12 @@ $(document).ready(function(){
 	 		320:{
 			 	items : 1
 	 		},
+	 		480:{
+			 	items : 2
+	 		},
+	 		768:{
+			 	items : 2
+	 		},
 	 		1024:{
 			 	items : 3
 	 		},
@@ -171,7 +177,8 @@ var slideToggleLeftMenu = function(targetClick,toggleEl) {
 	$(targetClick).click(function(event){
 			event.stopPropagation();
 			$(toggleEl).toggleClass("slide-menu--show");
-			$('body').append("<div class='filter'></div>")
+			$('body').append("<div class='filter'></div>");
+			$('body').toggleClass("filter-body");
 	});
 	$(toggleEl).on("click", function (event) {
 		event.stopPropagation();

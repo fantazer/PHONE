@@ -548,6 +548,7 @@ i {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 100;
 }
 
 .b-modal {
@@ -743,7 +744,7 @@ i {
   border-bottom: 5px solid transparent;
   border-right: 5px solid #6f83d8;
   position: absolute;
-  left: -5px;
+  left: -4px;
   margin-top: 2.5px;
 }
 
@@ -843,11 +844,11 @@ i {
 }
 
 .slider-control--mid .owl-prev {
-  left: 44%;
+  left: 35%;
 }
 
 .slider-control--mid .owl-next {
-  right: 44%;
+  right: 35%;
 }
 
 .slider-control--mid .owl-dots {
@@ -864,7 +865,7 @@ i {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 35px;
   position: relative;
   z-index: 2000;
 }
@@ -1528,6 +1529,7 @@ body {
 
 .cabinet-menu .main-page-header__message-val {
   color: #6f83d8;
+  line-height: 28px;
 }
 
 .cabinet-menu .icon-i-message {
@@ -1744,7 +1746,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  top: 45px;
+  top: 100%;
   left: 0px;
 }
 
@@ -1812,6 +1814,15 @@ body {
   padding: 0px 10px;
 }
 
+.main-page-header__message-wrap {
+  position: relative;
+}
+
+.main-page-wraper {
+  width: 100%;
+  position: relative;
+}
+
 .main-page-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1828,7 +1839,7 @@ body {
   position: relative;
   padding: 10px 15px;
   width: 100%;
-  background: #afbaf0;
+  background: #fff;
   height: 50px;
 }
 
@@ -1858,11 +1869,12 @@ body {
 
 .main-page-header__message-val {
   position: absolute;
-  lef: 0px;
+  line-height: 36px;
+  top: 0;
+  left: 0px;
   color: #fff;
-  margin-top: -2px;
-  margin-left: 2px;
   text-align: center;
+  width: 100%;
 }
 
 .header__logo {
@@ -2801,7 +2813,7 @@ body {
 
 .solution-item__el-wraper:hover {
   border: 2px solid #f9e36a;
-  padding: 6px 10px;
+  padding: 6px 8px;
 }
 
 .solution-item__img {
@@ -3434,6 +3446,10 @@ body {
     width: 80px;
   }
 
+  .filter-body {
+    height: 400px;
+  }
+
   .main-page__wraper {
     background-position: -400px -200px;
   }
@@ -3525,6 +3541,10 @@ body {
 
   .main-page-header__message i {
     font-size: 30px !important;
+  }
+
+  .main-page-header__message-val {
+    line-height: 30px;
   }
 
   .main-page-header__toggle i {

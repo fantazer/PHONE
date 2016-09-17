@@ -7,17 +7,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
 		<title>Document</title>
+		<!--inject:css -->
 		<!--build:css css/vendor.css-->
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
 		<link rel="stylesheet" href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css" />
-		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
 		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
 		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.css" />
 		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.skinNice.css" />
 		<link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
 		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
+		<!--endinject-->
 	</head>
 
 </html>
@@ -88,7 +89,9 @@
 					</div>
 					<div class="cabinet-menu__el">
 						<div class="main-page-header__message">
-							<i class="icon-i-message"></i>
+							<div class="main-page-header__message">
+								<i class="icon-i-message"></i>
+							</div>
 							<div class="main-page-header__message-val">92</div>
 						</div>
 					</div>
@@ -353,16 +356,16 @@
 	</div>
 	<!--block modal-callback end-->
 	<!--Include scripts-->
+	<!--inject:js-->
 	<!--build:js js/combined.js-->
-	<!--bower:js-->
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 	<script src="bower/ion.rangeSlider/js/ion.rangeSlider.js"></script>
 	<script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="js/audio.js"></script>
-	<!--endbower-->
 	<script src="js/jquery.smoothscroll.js"></script>
 	<!-- endbuild-->
 	<script src="js/script.js"></script>
+	<!--endinject-->
 </body>

@@ -32,19 +32,7 @@ var createFile = require('create-file');
 var jadeGlobbing  = require('gulp-jade-globbing');
 var wiredep = require('wiredep').stream;
 var clean = require('gulp-clean');
-var inlineCss = require('gulp-inline-css');
-
-gulp.task('inline', function () {
-  return gulp.src('./dist/*.html')
-        .pipe(inlineCss({
-            applyStyleTags: false,
-                applyLinkTags: true,
-                removeStyleTags: true,
-                removeLinkTags: false,
-                preserveMediaQueries:true,
-          }))
-        .pipe(gulp.dest('./dist/inlined'));
-});
+ 
 
 // ########## make img ###############
 gulp.task('imagePng',function(){

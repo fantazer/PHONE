@@ -7,8 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
 		<title>Document</title>
+		<!--inject:css -->
 		<link rel="stylesheet" href="css/vendor.css">
 		<link rel="stylesheet" href="css/style.css" />
+		<!--endinject-->
 	</head>
 
 </html>
@@ -19,16 +21,20 @@
 	<div class="blur__wraper">
 		<div class="solution-page__wraper">
 			<!--block header-->
-			<div class="main-page-header">
-				<div class="main-page-header__toggle">
-					<i class="icon-menu-toggle"></i>
-				</div>
-				<div class="main-page-header__logo">
-					<object type="image/svg+xml" data="img/logo.svg" class="logo header__logo"></object>
-				</div>
-				<div class="main-page-header__message">
-					<i class="icon-i-message"></i>
-					<div class="main-page-header__message-val">92</div>
+			<div class="main-page-wraper">
+				<div class="main-page-header">
+					<div class="main-page-header__toggle">
+						<i class="icon-menu-toggle"></i>
+					</div>
+					<div class="main-page-header__logo">
+						<object type="image/svg+xml" data="img/logo.svg" class="logo header__logo"></object>
+					</div>
+					<div class="main-page-header__message-wrap">
+						<div class="main-page-header__message">
+							<i class="icon-i-message"></i>
+						</div>
+						<div class="main-page-header__message-val">92</div>
+					</div>
 				</div>
 				<!--block header-panel-->
 				<div class="header-panel">
@@ -322,6 +328,8 @@
 	</div>
 	<!--block modal-callback end-->
 	<!--Include scripts-->
+	<!--inject:js-->
 	<script src="js/combined.js"></script>
 	<script src="js/script.js"></script>
+	<!--endinject-->
 </body>

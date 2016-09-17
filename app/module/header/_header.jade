@@ -1,13 +1,15 @@
 mixin header()
 	//block header
-	.main-page-header
-		.main-page-header__toggle
-			i.icon-menu-toggle
-		.main-page-header__logo
-			object(type="image/svg+xml" data="img/logo.svg" class="logo").header__logo
-		.main-page-header__message
-			i.icon-i-message
-			.main-page-header__message-val 92
+	.main-page-wraper
+		.main-page-header
+			.main-page-header__toggle
+				i.icon-menu-toggle
+			.main-page-header__logo
+				object(type="image/svg+xml" data="img/logo.svg" class="logo").header__logo
+			.main-page-header__message-wrap
+				.main-page-header__message
+					i.icon-i-message
+				.main-page-header__message-val 92
 		+header-panel()
 
 	//block header end
