@@ -1,20 +1,53 @@
+.main-page-header__message-wrap {
+  position: relative;
+}
+.main-page-wraper {
+  width: 100%;
+  position: relative;
+}
 .main-page-header {
   position: relative;
-  padding: 20px 15px;
+  padding: 10px 15px;
   width: 100%;
   background: #fff;
+  height: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .main-page-header {
+    padding: 5px 10px;
+    height: 50px;
+  }
 }
 .main-page-header__message {
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .main-page-header__message i {
+    font-size: 30px !important;
+  }
 }
 .main-page-header__message i {
   font-size: 36px;
 }
 .main-page-header__message-val {
   position: absolute;
-  lef: 0px;
+  line-height: 36px;
+  top: 0;
+  left: 0px;
   color: #fff;
-  margin-top: -2px;
-  margin-left: 2px;
   text-align: center;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .main-page-header__message-val {
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-page-header__toggle i {
+    font-size: 16px;
+  }
+}
+.header__logo {
+  width: 100px;
 }

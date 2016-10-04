@@ -1,0 +1,27 @@
+.cabinet-menu {
+  padding-top: 20px;
+  width: 100px;
+  background: #00f;
+  height: 100%;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .cabinet-menu {
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+}
+.cabinet-menu i {
+  color: #fff;
+}
+.cabinet-menu .main-page-header__message-val {
+  color: #00f;
+  line-height: 28px;
+}
+.cabinet-menu .icon-i-message {
+  font-size: 28px;
+}
+.cabinet-menu__el {
+  margin-bottom: 20px;
+}

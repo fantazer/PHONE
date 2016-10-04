@@ -1,0 +1,21 @@
+.call-sample__operator {
+  margin-left: 50px;
+  margin-bottom: -10px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1378px) {
+  .call-sample__operator {
+    font-size: 12px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+  }
+}
+.call-sample__operator span {
+  color: #afbaf0;
+}
+.call-sample__el {
+  margin-bottom: 40px;
+}
+.call-sample__el .time {
+  color: #000;
+}

@@ -1,0 +1,72 @@
+.adv-attantion {
+  padding: 20px 30px;
+  background: #00f;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .adv-attantion {
+    padding: 10px;
+  }
+}
+.adv-attantion__title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .adv-attantion__title {
+    font-size: 14px;
+  }
+}
+.adv-attantion__text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .adv-attantion__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+.adv-attantion__link {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .adv-attantion__link {
+    font-size: 12px;
+  }
+}
+.adv-attantion__link i {
+  color: #fff;
+}
+.adv-attantion__link i:before {
+  font-size: 28px;
+}
+@media only screen and (max-width: 1440px) {
+  .option__cal {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .option__cal > .type-md {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .option__attantion {
+    width: 100%;
+  }
+}
+.adv-attantion--red {
+  background-color: #f00;
+  background-image: url("../img/attantion-bg.png");
+  background-repeat: no-repeat;
+}

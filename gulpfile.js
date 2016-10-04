@@ -328,7 +328,7 @@ gulp.task('serve', function () {
         //tunnel: true,
         //tunnel: "webpage",
         server: {
-            baseDir: "app/",
+            baseDir: "app/dist/",
         }
     });
     browserSync.watch(["app/css/**/*.css" ,"app/js/**.*"]).on("change", browserSync.reload);
