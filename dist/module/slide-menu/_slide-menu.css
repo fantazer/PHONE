@@ -1,0 +1,119 @@
+.slide-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 100vh;
+  background: #fff;
+  transform: translateX(-100%) !important;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+.slide-menu__wraper {
+  height: 100%;
+  position: relative;
+  padding: 4vh 60px;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__wraper {
+    padding: 30px;
+  }
+}
+.slide-menu__wraper .icon-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #f00;
+}
+.slide-menu__block {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__block {
+    height: 45%;
+  }
+}
+.slide-menu--show {
+  transform: translateX(0) !important;
+  z-index: 2000;
+}
+.slide-menu__block-el {
+  text-align: right;
+  margin-bottom: 4vh;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__block-el {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.slide-menu__block-el a {
+  font-size: 2vh;
+}
+.slide-menu__block-el a:hover {
+  border-bottom: 2px solid #ffe362;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__block-el a {
+    font-size: 12px;
+  }
+}
+.slide-menu__footer {
+  margin-top: 20px;
+  width: 100%;
+}
+.slide-menu__footer .btn {
+  width: 100%;
+  padding: 3vh 15px;
+  font-size: 2vh;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__footer .btn {
+    font-size: 10px;
+    padding: 20px 15px;
+    font-size: 14px;
+    margin-right: 0;
+  }
+}
+.slide-menu__footer-tel {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #f00;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__footer-tel {
+    font-size: 14px;
+  }
+}
+.slide-menu__footer-email {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .slide-menu__footer-email {
+    font-size: 14px;
+  }
+}
+.slide-menu-ctr {
+  width: 100%;
+}
+.slide-menu-ctr__el {
+  margin-bottom: 10px;
+}
+.slide-menu-ctr__text {
+  color: #00f;
+  font-size: 16px;
+  width: 100px;
+}
+.slide-menu-ctr__icon {
+  margin-left: auto;
+}
+.slide-menu-ctr__icon i:before {
+  font-size: 38px;
+}

@@ -1,0 +1,75 @@
+.slogan {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 480px) {
+  .slogan-btn__row .btn {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slogan-btn__row .btn {
+    font-size: 16px;
+  }
+}
+.slogan__number {
+  font-size: 68px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #00f;
+}
+@media only screen and (max-width: 768px) {
+  .slogan__number {
+    font-size: 26px;
+  }
+}
+.slogan__wraper {
+  text-align: left;
+  margin-left: 10%;
+}
+.slogan-word {
+  font-size: 10vh;
+  font-weight: 600;
+  color: #00f;
+}
+@media only screen and (max-width: 768px) {
+  .slogan-word {
+    font-size: 7vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .slogan-word {
+    font-size: 5vh;
+  }
+}
+.slogan-word--last {
+  position: relative;
+  display: inline;
+}
+.slogan-word__sub {
+  position: absolute;
+  top: 28%;
+  left: 105%;
+  font-size: 18px;
+  width: 350px;
+}
+@media only screen and (max-width: 768px) {
+  .slogan-word__sub {
+    top: 100%;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .slogan-word__sub {
+    width: 250px;
+    font-size: 12px;
+  }
+}
+.slogan-word__sub-el {
+  font-weight: 300;
+  color: #000;
+}
+.slogan-word__sub-el span {
+  color: #00f;
+}

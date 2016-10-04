@@ -1,0 +1,19 @@
+.modal-callback {
+  width: 295px;
+}
+.modal-callback input {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.modal-callback .btn--md {
+  padding: 20px 10px;
+  width: 100%;
+  font-weight: 700;
+}
+.modal-callback__title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}

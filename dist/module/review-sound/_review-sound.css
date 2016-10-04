@@ -1,0 +1,24 @@
+.review-sound {
+  margin-top: 40px;
+  width: 100%;
+}
+.review-sound__el {
+  width: 26%;
+}
+@media only screen and (max-width: 1024px) {
+  .review-sound__el {
+    width: 31%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .review-sound__el {
+    width: 95%;
+  }
+}
+.review-sound__logo {
+  margin: 0 auto;
+  width: 170px;
+}
+.review-sound__logo img {
+  margin-left: 35px;
+}

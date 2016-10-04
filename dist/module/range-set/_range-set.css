@@ -1,0 +1,13 @@
+.range-set__el .nice-select {
+  height: 26px;
+  line-height: 24px;
+  margin: 0 15px;
+}
+@media only screen and (max-width: 768px) {
+  .range-set__el .nice-select {
+    margin: 0 5px;
+  }
+}
+.range-set__el .select--arrow {
+  margin-top: -12px;
+}

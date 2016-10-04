@@ -1,0 +1,29 @@
+.take-service__row-btn {
+  align-items: inherit;
+}
+@media only screen and (max-width: 1440px) {
+  .take-service__row-btn .btn {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .take-service__row-btn .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.take-service__row-btn .btn:last-child {
+  margin-right: 0;
+}
+.take-service__row-btn .btn--blue-empty {
+  padding: 25px 40px;
+  font-size: 22px;
+}
+@media only screen and (max-width: 1440px) {
+  .take-service__row-btn .btn--blue-empty {
+    font-size: 16px;
+  }
+  .take-service__row-btn .btn--blue-empty i {
+    font-size: 16px;
+  }
+}
